@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 get '/tags' => 'tags#index'
 get '/tags/:id' => 'tags#show', as: :tag
+get '/destinations/:id' => 'destinations#show', as: :destination
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
